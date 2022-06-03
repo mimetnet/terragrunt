@@ -21,6 +21,9 @@ require (
 	// can't use terraform as a library after v0.15.3, so we pull that in here.
 	github.com/hashicorp/terraform v0.15.3
 	github.com/hashicorp/terraform-config-inspect v0.0.0-20210318070130-9a80970d6b34
+	github.com/hashicorp/vault v1.4.2
+	github.com/hashicorp/vault/api v1.0.5-0.20210210214158-405eced08457 // indirect
+	github.com/hashicorp/vault/sdk v0.1.14-0.20210322210658-b52b8b8c1264 // indirect
 	github.com/imdario/mergo v0.3.11
 	github.com/mattn/go-zglob v0.0.2-0.20190814121620-e3c945676326
 	github.com/mitchellh/go-homedir v1.1.0
@@ -128,4 +131,4 @@ require (
 
 // This is necessary to workaround go modules error with terraform importing vault incorrectly.
 // See https://github.com/hashicorp/vault/issues/7848 for more info
-replace github.com/hashicorp/vault => github.com/hashicorp/vault v1.4.2
+// replace github.com/hashicorp/vault => github.com/hashicorp/vault v1.4.2
