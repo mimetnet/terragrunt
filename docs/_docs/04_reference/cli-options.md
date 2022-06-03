@@ -83,11 +83,11 @@ This will recursively search the current working directory for any folders that 
 dependencies between them—either via `dependency` blocks or `terraform_remote_state` data sources—and you've never
 deployed them, then `plan-all` will fail as it will not be possible to resolve the `dependency` blocks or
 `terraform_remote_state` data sources! Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/720#issuecomment-497888756).
+information](https://github.com/mimetnet/terragrunt/issues/720#issuecomment-497888756).
 
 **[NOTE]** Using `run-all` with `apply` or `destroy` silently adds the `-auto-approve` flag to the command line
 arguments passed to Terraform due to issues with shared `stdin` making individual approvals impossible. Please
-[see here for more information](https://github.com/gruntwork-io/terragrunt/issues/386#issuecomment-358306268)
+[see here for more information](https://github.com/mimetnet/terragrunt/issues/386#issuecomment-358306268)
 
 
 
@@ -115,7 +115,7 @@ This will recursively search the current working directory for any folders that 
 dependencies between them—either via `dependency` blocks or `terraform_remote_state` data sources—and you've never
 deployed them, then `plan-all` will fail as it will not be possible to resolve the `dependency` blocks or
 `terraform_remote_state` data sources! Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/720#issuecomment-497888756).
+information](https://github.com/mimetnet/terragrunt/issues/720#issuecomment-497888756).
 
 
 ### apply-all (DEPRECATED: use run-all)
@@ -139,7 +139,7 @@ This will recursively search the current working directory for any folders that 
 
 **[NOTE]** Using `apply-all` silently adds the `-auto-approve` flag to the command line arguments passed to Terraform
 due to issues with shared `stdin` making individual approvals impossible. Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/386#issuecomment-358306268)
+information](https://github.com/mimetnet/terragrunt/issues/386#issuecomment-358306268)
 
 
 ### output-all (DEPRECATED: use run-all)
@@ -165,7 +165,7 @@ This will recursively search the current working directory for any folders that 
 dependencies between them—either via `dependency` blocks or `terraform_remote_state` data sources—and you've never
 deployed them, then `output-all` will fail as it will not be possible to resolve the `dependency` blocks or
 `terraform_remote_state` data sources! Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/720#issuecomment-497888756).
+information](https://github.com/mimetnet/terragrunt/issues/720#issuecomment-497888756).
 
 ### destroy-all (DEPRECATED: use run-all)
 
@@ -188,7 +188,7 @@ This will recursively search the current working directory for any folders that 
 
 **[NOTE]** Using `destroy-all` silently adds the `-auto-approve` flag to the command line arguments passed to Terraform
 due to issues with shared `stdin` making individual approvals impossible. Please [see here for more
-information](https://github.com/gruntwork-io/terragrunt/issues/386#issuecomment-358306268)
+information](https://github.com/mimetnet/terragrunt/issues/386#issuecomment-358306268)
 
 
 ### validate-all (DEPRECATED: use run-all)

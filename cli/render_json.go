@@ -9,10 +9,10 @@ import (
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/mimetnet/terragrunt/config"
+	"github.com/mimetnet/terragrunt/errors"
+	"github.com/mimetnet/terragrunt/options"
+	"github.com/mimetnet/terragrunt/util"
 )
 
 // runRenderJSON takes the parsed TerragruntConfig struct and renders it out as JSON so that it can be processed by

@@ -1,4 +1,4 @@
-module github.com/gruntwork-io/terragrunt
+module github.com/mimetnet/terragrunt
 
 go 1.17
 

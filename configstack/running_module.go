@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/shell"
 	"github.com/hashicorp/go-multierror"
+	"github.com/mimetnet/terragrunt/errors"
+	"github.com/mimetnet/terragrunt/shell"
 )
 
 // Represents the status of a module that we are trying to apply as part of the apply-all or destroy-all command

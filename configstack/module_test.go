@@ -9,9 +9,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/mimetnet/terragrunt/config"
+	"github.com/mimetnet/terragrunt/errors"
+	"github.com/mimetnet/terragrunt/options"
 	"github.com/stretchr/testify/assert"
 )
 

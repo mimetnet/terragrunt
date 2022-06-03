@@ -11,8 +11,8 @@ import (
 
 	"fmt"
 
-	"github.com/gruntwork-io/terragrunt/errors"
 	"github.com/mattn/go-zglob"
+	"github.com/mimetnet/terragrunt/errors"
 	homedir "github.com/mitchellh/go-homedir"
 )
 

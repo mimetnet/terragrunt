@@ -9,9 +9,9 @@ import (
 
 	"github.com/google/shlex"
 
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/mimetnet/terragrunt/config"
+	"github.com/mimetnet/terragrunt/options"
+	"github.com/mimetnet/terragrunt/util"
 )
 
 // validateTerragruntInputs will collect all the terraform variables defined in the target module, and the terragrunt

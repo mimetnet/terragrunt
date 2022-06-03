@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/mimetnet/terragrunt/codegen"
+	"github.com/mimetnet/terragrunt/errors"
+	"github.com/mimetnet/terragrunt/options"
 )
 
 // Configuration for Terraform remote state

@@ -21,14 +21,14 @@ import (
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/cli/tfsource"
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/remote"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/mimetnet/terragrunt/aws_helper"
+	"github.com/mimetnet/terragrunt/cli/tfsource"
+	"github.com/mimetnet/terragrunt/codegen"
+	"github.com/mimetnet/terragrunt/errors"
+	"github.com/mimetnet/terragrunt/options"
+	"github.com/mimetnet/terragrunt/remote"
+	"github.com/mimetnet/terragrunt/shell"
+	"github.com/mimetnet/terragrunt/util"
 )
 
 type Dependency struct {
@@ -452,7 +452,7 @@ func cloneTerragruntOptionsForDependency(terragruntOptions *options.TerragruntOp
 	targetOptions := terragruntOptions.Clone(targetConfig)
 	targetOptions.OriginalTerragruntConfigPath = targetConfig
 	// Clear IAMRoleOptions in case if it is different from one passed through CLI to allow dependencies to define own iam roles
-	// https://github.com/gruntwork-io/terragrunt/issues/1853#issuecomment-940102676
+	// https://github.com/mimetnet/terragrunt/issues/1853#issuecomment-940102676
 	if targetOptions.IAMRoleOptions != targetOptions.OriginalIAMRoleOptions {
 		targetOptions.IAMRoleOptions = options.IAMRoleOptions{}
 	}

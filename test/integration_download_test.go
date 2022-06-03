@@ -9,11 +9,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gruntwork-io/terragrunt/cli"
-	"github.com/gruntwork-io/terragrunt/cli/tfsource"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/mimetnet/terragrunt/cli"
+	"github.com/mimetnet/terragrunt/cli/tfsource"
+	"github.com/mimetnet/terragrunt/config"
+	"github.com/mimetnet/terragrunt/errors"
+	"github.com/mimetnet/terragrunt/util"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

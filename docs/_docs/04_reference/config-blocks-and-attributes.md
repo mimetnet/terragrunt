@@ -284,7 +284,7 @@ from converting ALL shared modules:
 **If you run into issues deploying a module from the registry, chances are that module is not a Shared Service Module,
 and thus not designed for use with Terragrunt. Depending on the technical limitation, Terragrunt may be able to
 support the transition to root module. Please always file [an issue on the terragrunt
-repository](https://github.com/gruntwork-io/terragrunt/issues) with the module + error message you are encountering,
+repository](https://github.com/mimetnet/terragrunt/issues) with the module + error message you are encountering,
 instead of the module repository.**
 
 
@@ -393,7 +393,7 @@ For the `s3` backend, the following additional properties are supported in the `
 - `dynamodb_table_tags`: A map of key value pairs to associate as tags on the created DynamoDB remote state lock table.
 - `disable_aws_client_checksums`: When `true`, disable computing and checking checksums on the request and response,
   such as the CRC32 check for DynamoDB. This can be used to workaround
-  https://github.com/gruntwork-io/terragrunt/issues/1059.
+  https://github.com/mimetnet/terragrunt/issues/1059.
 - `accesslogging_bucket_name`: (Optional) When provided as a valid `string`, create an S3 bucket with this name to store the access logs for the S3 bucket used to store Terraform state. If not provided, or string is empty or invalid S3 bucket name, then server access logging for the S3 bucket storing the terraform state will be disabled.
 - `accesslogging_target_prefix`: (Optional) When provided as a valid `string`, set the `TargetPrefix` for the access log objects in the S3 bucket used to store Terraform state. If set to **empty**`string`, then `TargetPrefix` will be set to **empty** `string`. If attribute is not provided at all, then `TargetPrefix` will be set to **default** value `TFStateLogs/`. This attribute won't take effect if the `accesslogging_bucket_name` attribute is not present.
 - `bucket_sse_algorithm`: (Optional) The algorithm to use for server side encryption of the state bucket. Defaults to `aws:kms`.
@@ -503,7 +503,7 @@ backward compatibility, but is deprecated usage and support may be removed in th
 
 **NOTE**: At this time, Terragrunt only supports a single level of `include` blocks. That is, Terragrunt will error out
 if an included config also has an `include` block defined. If you are interested in this feature, please follow
-https://github.com/gruntwork-io/terragrunt/issues/1566 to be notified when nested `include` blocks are supported.
+https://github.com/mimetnet/terragrunt/issues/1566 to be notified when nested `include` blocks are supported.
 
 **Special case for shallow merge**: When performing a shallow merge, all attributes and blocks are merged shallowly with
 replacement, except for `dependencies` blocks (NOT `dependency` block). `dependencies` blocks are deep merged: that is,

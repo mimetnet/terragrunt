@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/gruntwork-io/terragrunt/util"
 	"github.com/hashicorp/go-getter"
+	"github.com/mimetnet/terragrunt/util"
 )
 
 // manifest for files copied from the URL specified in the terraform { source = "<URL>" } config

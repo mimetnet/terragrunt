@@ -11,9 +11,9 @@ import (
 	"github.com/imdario/mergo"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/mimetnet/terragrunt/errors"
+	"github.com/mimetnet/terragrunt/options"
+	"github.com/mimetnet/terragrunt/util"
 )
 
 const bareIncludeKey = ""
@@ -396,7 +396,7 @@ func (targetConfig *TerragruntConfig) DeepMerge(sourceConfig *TerragruntConfig, 
 		resultModuleDependencies := &ModuleDependencies{}
 		if targetConfig.Dependencies != nil {
 			// take in result dependencies only paths which aren't defined in source
-			// Fix for issue: https://github.com/gruntwork-io/terragrunt/issues/1900
+			// Fix for issue: https://github.com/mimetnet/terragrunt/issues/1900
 			targetPathMap := fetchDependencyPaths(targetConfig)
 			sourcePathMap := fetchDependencyPaths(sourceConfig)
 			for key, value := range targetPathMap {

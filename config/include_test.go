@@ -3,7 +3,7 @@ package config
 import (
 	"testing"
 
-	"github.com/gruntwork-io/terragrunt/remote"
+	"github.com/mimetnet/terragrunt/remote"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

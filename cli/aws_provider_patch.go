@@ -12,9 +12,9 @@ import (
 	"github.com/mattn/go-zglob"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/mimetnet/terragrunt/errors"
+	"github.com/mimetnet/terragrunt/options"
+	"github.com/mimetnet/terragrunt/util"
 )
 
 // applyAwsProviderPatch finds all Terraform modules nested in the current code (i.e., in the .terraform/modules

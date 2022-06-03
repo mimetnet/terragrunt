@@ -8,12 +8,12 @@ import (
 
 	"github.com/hashicorp/go-getter"
 
-	"github.com/gruntwork-io/terragrunt/cli/tfsource"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/internal/tfr"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/mimetnet/terragrunt/cli/tfsource"
+	"github.com/mimetnet/terragrunt/config"
+	"github.com/mimetnet/terragrunt/errors"
+	"github.com/mimetnet/terragrunt/internal/tfr"
+	"github.com/mimetnet/terragrunt/options"
+	"github.com/mimetnet/terragrunt/util"
 )
 
 // manifest for files copied from terragrunt module folder (i.e., the folder that contains the current terragrunt.hcl)
@@ -80,7 +80,7 @@ func downloadTerraformSourceIfNecessary(terraformSource *tfsource.TerraformSourc
 
 	var previousVersion = ""
 	// read previous source version
-	// https://github.com/gruntwork-io/terragrunt/issues/1921
+	// https://github.com/mimetnet/terragrunt/issues/1921
 	if util.FileExists(terraformSource.VersionFile) {
 		previousVersion, err = readVersionFile(terraformSource)
 		if err != nil {
