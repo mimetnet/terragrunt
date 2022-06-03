@@ -383,13 +383,26 @@ func checkIfPlanFile(arg string) bool {
 	return false
 }
 
+// There are a few special arguments for the local backend that also accept a file
+// https://www.terraform.io/language/settings/backends/local
+func isLocalBackendArg(arg string) bool {
+	switch arg {
+	case "-backup":
+	case "-state":
+	case "-state-out":
+		return true
+	}
+
+	return false
+}
+
 // Extract planfile from arguments list
 func extractPlanFile(argsToInsert []string) (*string, []string) {
 	planFile := ""
 	var filteredArgs []string
 
-	for _, arg := range argsToInsert {
-		if checkIfPlanFile(arg) {
+	for i, arg := range argsToInsert {
+		if checkIfPlanFile(arg) && (0 == i || !isLocalBackendArg(argsToInsert[i-1])) {
 			planFile = arg
 		} else {
 			filteredArgs = append(filteredArgs, arg)
