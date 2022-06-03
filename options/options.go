@@ -371,9 +371,16 @@ func (terragruntOptions *TerragruntOptions) Clone(terragruntConfigPath string) *
 	}
 }
 
-// Check if argument is planfile TODO check file format
+// Terraform will allow any filename for the plan file, but a typical convention
+// is to name it tfplan.
 func checkIfPlanFile(arg string) bool {
-	return util.IsFile(arg) && filepath.Ext(arg) == ".tfplan"
+	if filepath.Ext(arg) == ".tfplan" {
+		return true
+	} else if filepath.IsAbs(arg) {
+		return util.IsFile(arg)
+	}
+
+	return false
 }
 
 // Extract planfile from arguments list
